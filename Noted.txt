@@ -1,0 +1,5 @@
+MySQL database name = u952450156_catering
+MySQL username = u952450156_catering
+Pass: Catering_svr2020
+
+user admin : savira.fatika@students.amikom.ac.id, savira1103

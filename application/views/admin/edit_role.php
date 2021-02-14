@@ -1,0 +1,52 @@
+<div class="wrapper">
+
+   <!-- Content Wrapper. Contains page content -->
+   <div class="content-wrapper">
+      <!-- Main content -->
+      <section class="content">
+         <div class="container-fluid">
+            <!-- Content Header (Page header) -->
+            <div class="content-header">
+               <div class="container-fluid">
+                  <div class="row">
+                     <h1 class="m-0 text-dark">Role User Access</h1>
+                  </div><!-- /.row -->
+               </div><!-- /.container-fluid -->
+            </div>
+            <!-- /.content-header -->
+            <div class="flash-data" data-flashdata="<?= $this->session->flashdata('message'); ?>"></div>
+            <div class="flash-data-danger" data-flashdanger="<?= $this->session->flashdata('message-danger'); ?>"></div>
+
+            <!-- card add -->
+            <div class="card col-md-6">
+               <div class="card-header mt-1">
+                  <h3 class="card-title">Edit Role</h3>
+                  <div class="card-tools">
+                     <button type="button" class="btn btn-tool float-right" data-card-widget="collapse" data-toggle="tooltip" title="Collapse"><i class="fas fa-minus"></i></button>
+                  </div>
+               </div>
+               <!-- /.card-header -->
+               <div class="card-body">
+                  <!-- form start -->
+                  <form action="" method="POST">
+                     <div class="card-body">
+                        <input type="hidden" name="id_role" value="<?= $role_row['id_role']; ?>">
+                        <div class="form-group">
+                           <label for="menu">Role Name</label>
+                           <input type="text" class="form-control" id="role" name="role" value="<?= $role_row['role']; ?>">
+                           <?= form_error('role', '<small class="text-danger pl-3">', '</small>'); ?>
+                        </div>
+                     </div>
+                     <!-- /.card-body -->
+                     <button type="submit" class="btn" style="background-color: #adb5bd;"><i class="fas fa-pen-alt mr-2"></i>Edit</button>
+                  </form>
+                  <!-- form close -->
+               </div>
+               <!-- /.card-body -->
+            </div>
+            <!-- /.card add -->
+
+         </div><!-- /.container-fluid -->
+      </section>
+      <!-- /.content -->
+   </div>
